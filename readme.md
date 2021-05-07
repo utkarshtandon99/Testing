@@ -1,5 +1,7 @@
-check 123
-modification to readme file. Test git pull
-Another modification to readme file. Test git push.
-Switched to test_branch. Modifying readme file. Will push and then merge.
-Checking uncommited data to RR and swithcing to master branch.
+I upload practice problems on this repository.
+
+Problems are from different sources such as leetcode, hackerrank, geeksforgeeks.
+
+I will be uploading every week. For now, I am solving basic problems. As I progress, I will be uploading problems with increased difficulty.
+
+Also, through the process of uploading my solutions on GitHub, I learn more about version control and git :)

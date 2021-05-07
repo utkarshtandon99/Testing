@@ -1,0 +1,72 @@
+RR - Remote Repository;	LR - Local Repository
+
+Initial setup:
+	create a repo from browser
+	In terminal -
+	change dir to folder that contains modified/new file(s) and/or folder(s)
+	git init	(on the folder that has the files to push to RR)
+	git status	(to check new files and folders)
+	git add filename.ext	(seperate command for each file)	[for all files in folder --> git add .]
+	git status
+	git commit -m "Message"	(-m is for message/comments to add)
+	git remote add origin https://github.com/username/reponame.git	(only needs to be done first time pushing from LR to RR)
+	git push origin branchname
+
+
+To add new/modified file and folder from LR to RR:
+	change dir to folder that contains modified/new file(s) and/or folder(s)
+	git status	(to check modified/new files)
+	git add filename.ext
+	git commit -m "Message"
+	git push origin branchname	(this will ask for username and pwd everytime. To only enter pwd everytime and not username --> go to .git/config file in the dir and change 'url' to https://username@github.com/username/repo.git)
+
+
+Cloning repo:
+	change dir to where you want the repo to be downloaded
+	git clone https://github.com/username/reponame.git
+
+
+Changes done on RR and none to LR, then to sync: 
+	git pull origin branchname	(generally branchname is master, because it is the main branch you would want to sync to)
+
+
+
+
+
+Create new branch: (https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+	git branch branchname	(just create new branch)
+	git checkout -b branchname (will create new and switch to it)
+
+Switch branch:
+	git branch	(to check branches and current branch)
+	git switch branchname	  /	git checkout branchname	    (to change to existing branch)	
+
+Push branch to RR:
+	git push origin branchname
+
+Delete branch on LR:
+	git branch -d branchname
+
+Delete branch on RR:
+	git push origin :branchname
+
+Merge master with branch:
+	first switch to master branch
+	git merge branchname
+	git push origin master	(after merging, commit to RR master branch)
+
+
+
+
+
+Delete folder/file:
+	git rm -r folder/filename
+	git commit -m "Message"
+	git push origin branchname
+
+
+
+To cache pwd for sometime:
+	git config --global credential.helper "cache --timeout <seconds>"	(Example: if <seconds> is 7200 [--> 2hrs])
+
+

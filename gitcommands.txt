@@ -56,7 +56,11 @@ Merge master with branch:
 	git push origin master	(after merging, commit to RR master branch)
 
 
-
+Rename file on LR and push to RR:
+	make sure all files are added (ex - git add filename)
+	git mv oldname.ext newname.ext
+	git commit -m "Message"
+	git push origin branchname
 
 
 Delete folder/file:

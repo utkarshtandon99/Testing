@@ -1,3 +1,15 @@
+"""Question:
+You are given a binary matrix (can have only 1s and 0s as elements) with n rows and m columns initially consisting of all 0s. 
+Q queries follow. The queries can be of 4 types:
+1 R index
+1 C index
+2 R index
+2 C index
+In each query, the first input is the type of the query, the second input is whether we have to consider the row (R) or the column (C) and the third input is the index of the row/column. 
+For each type 1 query, we need to flip the elements of the row/column having the given index. 
+For each type 2 queries, we have to output the number of zeros present in the row/column having the given index.
+"""
+
 def flip_row(ind, mat):
     for i in range(len(mat[ind])):
         mat[ind][i] ^= 1

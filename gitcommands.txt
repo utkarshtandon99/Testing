@@ -6,7 +6,7 @@ Initial setup:
 	change dir to folder that contains modified/new file(s) and/or folder(s)
 	git init	(on the folder that has the files to push to RR)
 	git status	(to check new files and folders)
-	git add filename.ext	(seperate command for each file)	[for all new files in folder --> git add .]
+	git add filename.ext	(seperate command for each file)	[for all files in folder --> git add .]
 	git status
 	git commit -m "Message"	(-m is for message/comments to add)
 	git remote add origin https://github.com/username/reponame.git	(only needs to be done first time pushing from LR to RR)
@@ -56,11 +56,7 @@ Merge master with branch:
 	git push origin master	(after merging, commit to RR master branch)
 
 
-Rename file on LR and push to RR:
-	make sure all files are added (ex - git add filename)
-	git mv oldname.ext newname.ext
-	git commit -m "Message"
-	git push origin branchname
+
 
 
 Delete folder/file:
@@ -68,6 +64,9 @@ Delete folder/file:
 	git commit -m "Message"
 	git push origin branchname
 
+Rename file:
+	git mv source.ext dest.ext
+	(Ex -  git mv equal0and1s\ \(2\).py equal0and1s.py ) Source --> equal0and1s (2).py	dest --> equal0and1s.py
 
 
 To cache pwd for sometime:

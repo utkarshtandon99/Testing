@@ -1,3 +1,7 @@
+"""
+Divide array into max sets containing equal no of 1s and 0s
+"""
+
 if __name__ == "__main__":
     s = str(input())
     ct, c0, c1 = 0, 0, 0
